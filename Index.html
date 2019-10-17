@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Buses</title>
+</head>
+
+<body>
+<div class="control-wrapper">
+    <h3>Añadir Base</h3>
+    <form id="newBaseForm" novalidate>
+        <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+        </div>
+        <div class="form-row form-group">
+            <input type="number" class="form-control" id="time" placeholder="Minutos" required>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="basePrev" placeholder="Base Anterior(Opcional)" required>
+        </div>
+        <button type="button" id="addBase">Agregar</button>
+    </form>
+</div>
+
+<div class="control-wrapper">
+    <h3>Buscar/Eliminar Articulo</h3>
+    <input type="number" id="strName" placeholder="name">
+    <button type="button" id="btnSearch" name="button">Buscar</button>
+    <button type="button"  id="btnDelete" name="button">Eliminar</button>
+</div>
+
+<div class="control-wrapper">
+    <button type="button" id="btnPrint" name="button">Imprimir</button>
+    <button type="button" id="btnInverseReport" name="button">Generar Reporte Inverso</button>
+</div>
+
+<div id="report">
+
+</div>
+
+<!--Javascript funcional-->
+<script src="../js/main.js" type="module"></script>
+
+</body>
+
+</html>
