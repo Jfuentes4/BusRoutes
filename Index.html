@@ -25,14 +25,16 @@
 
 <div class="control-wrapper">
     <h3>Buscar/Eliminar Articulo</h3>
-    <input type="number" id="strName" placeholder="name">
+    <input type="text" id="strName" placeholder="name">
     <button type="button" id="btnSearch" name="button">Buscar</button>
     <button type="button"  id="btnDelete" name="button">Eliminar</button>
+    <button type="button" id="btnPrint" name="button">Imprimir</button>
 </div>
 
 <div class="control-wrapper">
-    <button type="button" id="btnPrint" name="button">Imprimir</button>
-    <button type="button" id="btnInverseReport" name="button">Generar Reporte Inverso</button>
+    base de Inicio: <select id="startBase">
+    </select> de <input type="time" id="startTime"> a <input type="time" id="endTime">
+    <button type="button" id="btnGenerateRoute" name="button">Generar Recorrido</button>
 </div>
 
 <div id="report">
@@ -40,7 +42,7 @@
 </div>
 
 <!--Javascript funcional-->
-<script src="../js/main.js" type="module"></script>
+<script src="./js/Main.js" type="module"></script>
 
 </body>
 

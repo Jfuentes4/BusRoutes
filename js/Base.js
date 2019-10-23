@@ -9,6 +9,12 @@ class Base {
     };
 
     get time () {
-        return this._time;
+        return Number(this._time);
     };
+
+    toString () {
+        return 'Base: ' + this._name + ', \nTiempo: ' + this._time;
+    }
 }
+
+export default Base;
